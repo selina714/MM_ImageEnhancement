@@ -14,24 +14,22 @@ env/
 .DS_Store
 Thumbs.db
 
-# TA dataset / local datasets
+# TA dataset files
+datasets/
 data/
 dataset/
-datasets/
-Dataset/
-Datasets/
-TA_dataset/
-ta_dataset/
-raw_data/
-processed_data/
-
-# Large compressed dataset files
-*.zip
+low-light/
+low-light.tar
 *.tar
 *.tar.gz
 *.tgz
+*.zip
 *.rar
 *.7z
+
+# Prepared / converted dataset folders
+prepared_data/
+nafnet_data/
 
 # Training outputs
 outputs/
@@ -42,7 +40,7 @@ logs/
 wandb/
 tb_logger/
 
-# NAFNet training outputs
+# NAFNet generated training outputs
 NAFNet/results/
 NAFNet/experiments/*/models/
 NAFNet/experiments/*/training_states/
