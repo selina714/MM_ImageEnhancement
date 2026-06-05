@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# TA dataset files
+/datasets/
+/dataset/
+/data/
+/low-light/
+/nafnet_data/
+/nafnet_data_subset/
+low-light.tar
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.rar
+*.7z
+
+# Training outputs
+outputs/
+results/
+checkpoints/
+weights/
+logs/
+wandb/
+tb_logger/
+
+# NAFNet generated training outputs
+NAFNet/results/
+NAFNet/experiments/*/models/
+NAFNet/experiments/*/training_states/
+NAFNet/experiments/*/visualization/
+NAFNet/tb_logger/
+
+# Model files
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.pkl
+*.pickle
+
+# Temporary files
+tmp/
+temp/
+.cache/
