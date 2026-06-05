@@ -15,10 +15,12 @@ env/
 Thumbs.db
 
 # TA dataset files
-datasets/
-data/
-dataset/
-low-light/
+/datasets/
+/dataset/
+/data/
+/low-light/
+/nafnet_data/
+/nafnet_data_subset/
 low-light.tar
 *.tar
 *.tar.gz
@@ -26,10 +28,6 @@ low-light.tar
 *.zip
 *.rar
 *.7z
-
-# Prepared / converted dataset folders
-prepared_data/
-nafnet_data/
 
 # Training outputs
 outputs/
