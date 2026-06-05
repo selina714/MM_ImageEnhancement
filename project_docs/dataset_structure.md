@@ -1,18 +1,26 @@
-# Dataset Structure
+# Low-Light Dataset Structure
 
-The dataset is provided by the TA and is not included in this GitHub repository.
+The dataset is provided by the TA and is not included in this repository.
 
-The dataset should be stored locally or in shared Google Drive.
-
-Expected structure:
+Original archive:
 
 ```text
-dataset/
+datasets/
+└── low-light.tar
+
+after extraction:
+low-light/
 ├── train/
-│   ├── input/
-│   └── target/
 ├── val/
-│   ├── input/
-│   └── target/
+├── test/
+└── dataset.py
+
+nafnet_data/
+├── train/
+│   ├── lq/
+│   └── gt/
+├── val/
+│   ├── lq/
+│   └── gt/
 └── test/
-    └── input/
+    └── lq/
