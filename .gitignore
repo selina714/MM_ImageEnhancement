@@ -1,0 +1,9 @@
+venv/
+datasets/
+results/
+experiments/
+logs/
+__pycache__/
+*.pyc
+.eggs/
+*.egg-info/

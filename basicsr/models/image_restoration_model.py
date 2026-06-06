@@ -5,6 +5,7 @@
 # Copyright 2018-2020 BasicSR Authors
 # ------------------------------------------------------------------------
 import importlib
+from skimage import metrics
 import torch
 import torch.nn.functional as F
 from collections import OrderedDict
@@ -362,7 +363,9 @@ class ImageRestorationModel(BaseModel):
             keys.append(name)
             metrics.append(value)
         metrics = torch.stack(metrics, 0)
-        torch.distributed.reduce(metrics, dst=0)
+        # torch.distributed.reduce(metrics, dst=0)
+        if torch.distributed.is_available() and torch.distributed.is_initialized():
+            torch.distributed.reduce(metrics, dst=0)
         if self.opt['rank'] == 0:
             metrics_dict = {}
             cnt = 0
